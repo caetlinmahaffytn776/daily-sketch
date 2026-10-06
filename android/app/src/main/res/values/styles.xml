@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="TextAppearance.App.Display" parent="TextAppearance.Material3.HeadlineLarge">
+        <item name="android:textSize">40sp</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:letterSpacing">0.06</item>
+        <item name="android:textColor">@color/paper</item>
+    </style>
+
+    <style name="TextAppearance.App.Headline" parent="TextAppearance.Material3.HeadlineMedium">
+        <item name="android:textSize">34sp</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:letterSpacing">0.04</item>
+        <item name="android:textColor">@color/ink</item>
+    </style>
+
+    <style name="TextAppearance.App.Prompt" parent="TextAppearance.Material3.HeadlineSmall">
+        <item name="android:textSize">22sp</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:lineSpacingExtra">6sp</item>
+        <item name="android:textColor">@color/ink</item>
+    </style>
+
+    <style name="TextAppearance.App.Prompt.Compact">
+        <item name="android:textSize">17sp</item>
+        <item name="android:lineSpacingExtra">3sp</item>
+    </style>
+
+    <style name="TextAppearance.App.Wordmark" parent="TextAppearance.Material3.TitleMedium">
+        <item name="android:textSize">15sp</item>
+        <item name="android:letterSpacing">0.22</item>
+        <item name="android:textColor">@color/ink</item>
+    </style>
+
+    <style name="TextAppearance.App.Wordmark.Header">
+        <item name="android:letterSpacing">0.18</item>
+    </style>
+
+    <style name="TextAppearance.App.Body" parent="TextAppearance.Material3.BodyMedium">
+        <item name="android:textSize">15sp</item>
+        <item name="android:lineSpacingExtra">3sp</item>
+        <item name="android:textColor">@color/ink_soft</item>
+    </style>
+
+    <style name="TextAppearance.App.Body.Small">
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="TextAppearance.App.Eyebrow" parent="TextAppearance.Material3.LabelSmall">
+        <item name="android:textSize">11sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:letterSpacing">0.3</item>
+        <item name="android:textColor">@color/ink_muted</item>
+    </style>
+
+    <style name="TextAppearance.App.Eyebrow.Plum">
+        <item name="android:textColor">@color/plum</item>
+        <item name="android:letterSpacing">0.18</item>
+    </style>
+
+    <style name="TextAppearance.App.Eyebrow.Splash">
+        <item name="android:textSize">12sp</item>
+        <item name="android:letterSpacing">0.28</item>
+        <item name="android:textColor">@color/sand</item>
+    </style>
+
+    <style name="TextAppearance.App.Eyebrow.Loading">
+        <item name="android:textColor">@color/splash_muted</item>
+    </style>
+
+    <style name="TextAppearance.App.Stat" parent="TextAppearance.Material3.TitleLarge">
+        <item name="android:textSize">26sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:fontFeatureSettings">tnum</item>
+        <item name="android:textColor">@color/terracotta</item>
+    </style>
+
+    <style name="TextAppearance.App.Stat.Timer">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/plum</item>
+    </style>
+
+    <style name="Widget.App.Button.Primary" parent="Widget.Material3.Button">
+        <item name="android:minHeight">@dimen/button_height_primary</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:letterSpacing">0.1</item>
+        <item name="android:textColor">@color/on_terracotta</item>
+        <item name="backgroundTint">@color/terracotta</item>
+        <item name="cornerRadius">@dimen/button_radius</item>
+        <item name="rippleColor">@color/ripple_sand</item>
+        <item name="elevation">3dp</item>
+        <item name="iconTint">@color/on_terracotta</item>
+        <item name="iconSize">@dimen/icon_size</item>
+        <item name="iconPadding">10dp</item>
+        <item name="iconGravity">textStart</item>
+    </style>
+
+    <style name="Widget.App.Button.Secondary" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="android:minHeight">@dimen/button_height_secondary</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:letterSpacing">0.12</item>
+        <item name="android:textColor">@color/ink</item>
+        <item name="backgroundTint">@color/paper</item>
+        <item name="strokeColor">@color/stroke_sand</item>
+        <item name="strokeWidth">@dimen/hairline</item>
+        <item name="cornerRadius">@dimen/button_radius</item>
+        <item name="rippleColor">@color/ripple_plum</item>
+        <item name="iconTint">@color/ink</item>
+        <item name="iconSize">@dimen/icon_size</item>
+        <item name="iconGravity">textStart</item>
+    </style>
+
+    <style name="Widget.App.Button.Text" parent="Widget.Material3.Button.TextButton">
+        <item name="android:minHeight">@dimen/button_height_text</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:letterSpacing">0.14</item>
+        <item name="android:textColor">@color/ink_muted</item>
+        <item name="rippleColor">@color/ripple_plum</item>
+        <item name="cornerRadius">@dimen/button_radius</item>
+    </style>
+
+    <style name="Widget.App.Button.Text.Warn">
+        <item name="android:textColor">@color/terracotta_deep</item>
+    </style>
+
+    <style name="Widget.App.Button.Icon" parent="Widget.Material3.Button.TextButton">
+        <item name="android:minWidth">@dimen/touch_min</item>
+        <item name="android:minHeight">@dimen/touch_min</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:paddingStart">0dp</item>
+        <item name="android:paddingEnd">0dp</item>
+        <item name="iconPadding">0dp</item>
+        <item name="iconSize">@dimen/icon_size</item>
+        <item name="iconTint">@color/ink_soft</item>
+        <item name="iconGravity">textStart</item>
+        <item name="cornerRadius">@dimen/card_radius</item>
+        <item name="rippleColor">@color/ripple_plum</item>
+    </style>
+
+    <style name="Widget.App.Chip.Choice" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="android:minHeight">@dimen/chip_height</item>
+        <item name="android:minWidth">0dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:paddingStart">@dimen/gap_s</item>
+        <item name="android:paddingEnd">@dimen/gap_s</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:letterSpacing">0.08</item>
+        <item name="android:textColor">@color/ink_soft</item>
+        <item name="backgroundTint">@color/paper</item>
+        <item name="strokeColor">@color/stroke_warm</item>
+        <item name="strokeWidth">@dimen/hairline</item>
+        <item name="cornerRadius">@dimen/chip_radius</item>
+        <item name="rippleColor">@color/ripple_sand</item>
+    </style>
+
+    <style name="Widget.App.Card.Paper" parent="Widget.Material3.CardView.Outlined">
+        <item name="cardCornerRadius">@dimen/card_radius</item>
+        <item name="cardElevation">1dp</item>
+        <item name="strokeWidth">@dimen/hairline</item>
+        <item name="strokeColor">@color/stroke_warm</item>
+        <item name="cardBackgroundColor">@color/surface</item>
+        <item name="rippleColor">@color/ripple_sand</item>
+    </style>
+
+    <style name="Widget.App.Card.Stat" parent="Widget.App.Card.Paper">
+        <item name="cardCornerRadius">@dimen/card_radius_lg</item>
+        <item name="android:minHeight">@dimen/stat_card_height</item>
+    </style>
+
+    <style name="Widget.App.Hairline" parent="">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/hairline</item>
+        <item name="android:background">@color/stroke_warm</item>
+    </style>
+</resources>

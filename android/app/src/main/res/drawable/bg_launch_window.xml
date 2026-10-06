@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:angle="270"
+                android:startColor="@color/ink"
+                android:centerColor="@color/ink_plum"
+                android:endColor="@color/plum"
+                android:type="linear" />
+        </shape>
+    </item>
+    <item
+        android:width="@dimen/launch_mark"
+        android:height="@dimen/launch_mark"
+        android:gravity="center"
+        android:drawable="@drawable/shape_launch_mark" />
+</layer-list>

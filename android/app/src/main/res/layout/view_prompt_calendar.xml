@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/calendar_weekdays"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/weekday_mon"
+                android:textAppearance="@style/TextAppearance.App.Eyebrow"
+                android:textSize="10sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/weekday_tue"
+                android:textAppearance="@style/TextAppearance.App.Eyebrow"
+                android:textSize="10sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/weekday_wed"
+                android:textAppearance="@style/TextAppearance.App.Eyebrow"
+                android:textSize="10sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/weekday_thu"
+                android:textAppearance="@style/TextAppearance.App.Eyebrow"
+                android:textSize="10sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/weekday_fri"
+                android:textAppearance="@style/TextAppearance.App.Eyebrow"
+                android:textSize="10sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/weekday_sat"
+                android:textAppearance="@style/TextAppearance.App.Eyebrow"
+                android:textSize="10sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/weekday_sun"
+                android:textAppearance="@style/TextAppearance.App.Eyebrow"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/calendar_grid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/gap_xxs"
+            android:orientation="vertical" />
+
+        <LinearLayout
+            android:id="@+id/calendar_legend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/gap_xs"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="@dimen/calendar_dot_small"
+                android:layout_height="@dimen/calendar_dot_small"
+                android:background="@drawable/shape_dot_filled" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/gap_xxs"
+                android:layout_marginEnd="@dimen/gap_s"
+                android:text="@string/legend_done"
+                android:textAppearance="@style/TextAppearance.App.Eyebrow"
+                android:textSize="9sp" />
+
+            <View
+                android:layout_width="@dimen/calendar_dot_small"
+                android:layout_height="@dimen/calendar_dot_small"
+                android:background="@drawable/shape_dot_ring" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/gap_xxs"
+                android:layout_marginEnd="@dimen/gap_s"
+                android:text="@string/legend_missed"
+                android:textAppearance="@style/TextAppearance.App.Eyebrow"
+                android:textSize="9sp" />
+
+            <View
+                android:layout_width="@dimen/calendar_dot_small"
+                android:layout_height="@dimen/calendar_dot_small"
+                android:background="@drawable/shape_cell_today" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/gap_xxs"
+                android:text="@string/legend_today"
+                android:textAppearance="@style/TextAppearance.App.Eyebrow"
+                android:textSize="9sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</merge>

@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/menu_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_menu_gradient">
+
+    <ImageView
+        android:id="@+id/menu_art"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:alpha="0.18"
+        android:importantForAccessibility="no"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_menu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/menu_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.74" />
+
+    <TextView
+        android:id="@+id/menu_wordmark"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/touch_min"
+        android:layout_marginStart="@dimen/screen_margin"
+        android:layout_marginTop="@dimen/status_bar_pad"
+        android:gravity="center_vertical"
+        android:text="@string/menu_wordmark"
+        android:textAppearance="@style/TextAppearance.App.Wordmark"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/menu_settings"
+        style="@style/Widget.App.Button.Icon"
+        android:layout_width="@dimen/touch_min"
+        android:layout_height="@dimen/touch_min"
+        android:layout_marginEnd="@dimen/gap_m"
+        android:contentDescription="@string/cd_settings"
+        app:icon="@drawable/ic_settings"
+        app:layout_constraintBottom_toBottomOf="@id/menu_wordmark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/menu_wordmark" />
+
+    <View
+        android:id="@+id/menu_header_rule"
+        style="@style/Widget.App.Hairline"
+        android:layout_width="0dp"
+        android:layout_marginStart="@dimen/screen_margin"
+        android:layout_marginTop="@dimen/gap_xs"
+        android:layout_marginEnd="@dimen/screen_margin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/menu_wordmark" />
+
+    <TextView
+        android:id="@+id/menu_eyebrow_today"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/screen_margin"
+        android:layout_marginTop="@dimen/gap_m"
+        android:text="@string/menu_eyebrow_today"
+        android:textAppearance="@style/TextAppearance.App.Eyebrow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/menu_header_rule" />
+
+    <TextView
+        android:id="@+id/menu_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/screen_margin"
+        android:layout_marginTop="@dimen/gap_xxs"
+        android:textAppearance="@style/TextAppearance.App.Body"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/menu_eyebrow_today" />
+
+    <TextView
+        android:id="@+id/menu_badge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/gap_xs"
+        android:background="@drawable/shape_badge_done"
+        android:paddingStart="@dimen/gap_xs"
+        android:paddingTop="3dp"
+        android:paddingEnd="@dimen/gap_xs"
+        android:paddingBottom="3dp"
+        android:text="@string/menu_badge_done"
+        android:textAppearance="@style/TextAppearance.App.Eyebrow"
+        android:textColor="@color/ink"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/menu_date"
+        app:layout_constraintStart_toEndOf="@id/menu_date"
+        app:layout_constraintTop_toTopOf="@id/menu_date" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/menu_prompt_card"
+        style="@style/Widget.App.Card.Paper"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/screen_margin"
+        android:layout_marginTop="@dimen/gap_m"
+        app:layout_constraintEnd_toEndOf="@id/menu_guideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/menu_date">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/gap_m"
+            android:paddingBottom="@dimen/gap_m">
+
+            <View
+                android:layout_width="@dimen/rule_width"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/gap_s"
+                android:background="@drawable/shape_left_rule" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingStart="@dimen/gap_s"
+                android:paddingEnd="@dimen/gap_m">
+
+                <TextView
+                    android:id="@+id/menu_prompt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="3"
+                    android:textAppearance="@style/TextAppearance.App.Prompt" />
+
+                <TextView
+                    android:id="@+id/menu_category"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/gap_s"
+                    android:background="@drawable/shape_chip_plum_tint"
+                    android:paddingStart="@dimen/gap_xs"
+                    android:paddingTop="4dp"
+                    android:paddingEnd="@dimen/gap_xs"
+                    android:paddingBottom="4dp"
+                    android:textAppearance="@style/TextAppearance.App.Eyebrow.Plum" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <ImageView
+        android:id="@+id/menu_sprite"
+        android:layout_width="@dimen/sprite_menu"
+        android:layout_height="@dimen/sprite_menu"
+        android:layout_marginEnd="@dimen/gap_xs"
+        android:contentDescription="@string/cd_menu_sprite"
+        android:scaleType="fitCenter"
+        android:src="@drawable/sprite_sketchbook"
+        android:translationY="-18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/menu_prompt_card" />
+
+    <View
+        android:id="@+id/menu_month_rule"
+        style="@style/Widget.App.Hairline"
+        android:layout_width="0dp"
+        android:layout_marginStart="@dimen/screen_margin"
+        android:layout_marginTop="@dimen/gap_l"
+        android:layout_marginEnd="@dimen/screen_margin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/menu_prompt_card" />
+
+    <TextView
+        android:id="@+id/menu_eyebrow_month"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/screen_margin"
+        android:layout_marginTop="@dimen/gap_s"
+        android:text="@string/menu_eyebrow_month"
+        android:textAppearance="@style/TextAppearance.App.Eyebrow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/menu_month_rule" />
+
+    <com.dailysketch.app.core.ui.PromptCalendarView
+        android:id="@+id/menu_calendar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/screen_margin"
+        android:layout_marginTop="@dimen/gap_xs"
+        android:layout_marginEnd="@dimen/screen_margin"
+        app:layout_constrainedHeight="true"
+        app:layout_constraintBottom_toTopOf="@id/menu_stats_row"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/menu_eyebrow_month"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <LinearLayout
+        android:id="@+id/menu_stats_row"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/screen_margin"
+        android:layout_marginEnd="@dimen/screen_margin"
+        android:layout_marginBottom="@dimen/gap_m"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@id/menu_hint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.dailysketch.app.core.ui.StatCardView
+            android:id="@+id/menu_stat_streak"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/gap_xs"
+            android:layout_weight="1"
+            app:statAccent="@color/terracotta"
+            app:statLabel="@string/stat_streak" />
+
+        <com.dailysketch.app.core.ui.StatCardView
+            android:id="@+id/menu_stat_entries"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/gap_xs"
+            android:layout_weight="1"
+            app:statAccent="@color/plum"
+            app:statLabel="@string/stat_entries" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/menu_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/screen_margin"
+        android:layout_marginBottom="@dimen/gap_xs"
+        android:text="@string/menu_hint"
+        android:textAppearance="@style/TextAppearance.App.Body.Small"
+        app:layout_constraintBottom_toTopOf="@id/menu_cta"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/menu_cta"
+        style="@style/Widget.App.Button.Primary"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/button_height_primary"
+        android:layout_marginStart="@dimen/screen_margin"
+        android:layout_marginBottom="@dimen/menu_cta_bottom"
+        android:minWidth="220dp"
+        android:text="@string/menu_cta"
+        app:icon="@drawable/ic_pencil"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/menu_footer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/screen_margin"
+        android:layout_marginBottom="@dimen/menu_footer_bottom"
+        android:letterSpacing="0.18"
+        android:text="@string/menu_footer"
+        android:textColor="@color/ink_muted"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

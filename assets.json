@@ -1,0 +1,54 @@
+{
+  "assets": [
+    {
+      "name": "icon_1024",
+      "type": "icon",
+      "prompt": "App icon, one single glossy 3D terracotta pencil standing upright, centered, warm cream radial gradient background, crisp, no text"
+    },
+    {
+      "name": "bg_splash",
+      "type": "bg",
+      "prompt": "Vertical 9:16 mobile app background, dark plum and ink paper texture with faint charcoal grain, moody, no text, no UI elements"
+    },
+    {
+      "name": "bg_menu",
+      "type": "bg",
+      "prompt": "Vertical 9:16 mobile app background, warm cream art paper with a soft terracotta wash in the corners, light and airy, no text, no UI elements"
+    },
+    {
+      "name": "bg_game",
+      "type": "bg",
+      "prompt": "Vertical 9:16 mobile app background, soft blurred sketchbook page with faint pencil strokes, low contrast for UI overlay, no text, no UI elements"
+    },
+    {
+      "name": "bg_result",
+      "type": "bg",
+      "prompt": "Vertical 9:16 mobile app background, warm sand paper with a gentle plum glow at the top, calm, no text, no UI elements"
+    },
+    {
+      "name": "texture_paper",
+      "type": "bg",
+      "prompt": "Vertical 9:16 seamless warm cream paper texture, visible fibers and gentle grain, flat lighting, no text, no objects"
+    },
+    {
+      "name": "sprite_pencil",
+      "type": "sprite",
+      "prompt": "One single glossy 3D terracotta pencil, centered icon, isolated on plain white, no other objects"
+    },
+    {
+      "name": "sprite_sketchbook",
+      "type": "sprite",
+      "prompt": "One single cute 3D closed sketchbook with a sand elastic band, centered icon, glossy render, isolated on plain white, no other objects"
+    },
+    {
+      "name": "sprite_palette",
+      "type": "sprite",
+      "prompt": "One single small 3D artist paint palette with three paint blobs, centered icon, glossy render, isolated on plain white, no other objects"
+    },
+    {
+      "name": "sprite_ink_bottle",
+      "type": "sprite",
+      "prompt": "One single 3D glass ink bottle with a plum cork, centered icon, glossy render, isolated on plain white, no other objects"
+    }
+  ]
+}

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/settings_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_dialog_gradient"
+    android:paddingTop="@dimen/status_bar_pad">
+
+    <TextView
+        android:id="@+id/settings_title"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/touch_min"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="@dimen/screen_margin"
+        android:gravity="center_vertical"
+        android:text="@string/settings_title"
+        android:textAppearance="@style/TextAppearance.App.Wordmark" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/settings_close"
+        style="@style/Widget.App.Button.Icon"
+        android:layout_width="@dimen/touch_min"
+        android:layout_height="@dimen/touch_min"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="@dimen/gap_m"
+        android:contentDescription="@string/cd_close"
+        app:icon="@drawable/ic_close" />
+
+    <TextView
+        android:id="@+id/settings_footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/settings_done"
+        android:layout_marginStart="@dimen/screen_margin"
+        android:layout_marginEnd="@dimen/screen_margin"
+        android:layout_marginBottom="@dimen/gap_s"
+        android:gravity="center"
+        android:text="@string/settings_offline"
+        android:textAppearance="@style/TextAppearance.App.Body.Small" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/settings_done"
+        style="@style/Widget.App.Button.Secondary"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height_secondary"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/screen_margin"
+        android:layout_marginEnd="@dimen/screen_margin"
+        android:layout_marginBottom="@dimen/gap_xl"
+        android:text="@string/settings_close" />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/settings_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/settings_footer"
+        android:layout_below="@id/settings_title"
+        android:clipToPadding="false"
+        android:paddingStart="@dimen/screen_margin"
+        android:paddingTop="@dimen/gap_m"
+        android:paddingEnd="@dimen/screen_margin"
+        android:paddingBottom="@dimen/gap_m">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.materialswitch.MaterialSwitch
+                android:id="@+id/settings_reminder"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/touch_min"
+                android:text="@string/settings_reminder"
+                android:textAppearance="@style/TextAppearance.App.Eyebrow"
+                android:textColor="@color/ink" />
+
+            <TextView
+                android:id="@+id/settings_reminder_caption"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/settings_reminder_caption"
+                android:textAppearance="@style/TextAppearance.App.Body.Small" />
+
+            <View
+                style="@style/Widget.App.Hairline"
+                android:layout_marginTop="@dimen/gap_m" />
+
+            <TextView
+                android:id="@+id/settings_pack_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/gap_m"
+                android:text="@string/settings_pack"
+                android:textAppearance="@style/TextAppearance.App.Eyebrow" />
+
+            <LinearLayout
+                android:id="@+id/settings_pack_row"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/gap_xs"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/pack_observation"
+                    style="@style/Widget.App.Chip.Choice"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/chip_height"
+                    android:layout_marginEnd="@dimen/gap_xxs"
+                    android:layout_weight="1"
+                    android:text="@string/settings_pack_observation" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/pack_imagination"
+                    style="@style/Widget.App.Chip.Choice"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/chip_height"
+                    android:layout_marginStart="@dimen/gap_xxs"
+                    android:layout_marginEnd="@dimen/gap_xxs"
+                    android:layout_weight="1"
+                    android:text="@string/settings_pack_imagination" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/pack_mixed"
+                    style="@style/Widget.App.Chip.Choice"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/chip_height"
+                    android:layout_marginStart="@dimen/gap_xxs"
+                    android:layout_weight="1"
+                    android:text="@string/settings_pack_mixed" />
+
+            </LinearLayout>
+
+            <View
+                style="@style/Widget.App.Hairline"
+                android:layout_marginTop="@dimen/gap_m" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/settings_reset"
+                style="@style/Widget.App.Button.Text.Warn"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/touch_min"
+                android:layout_marginTop="@dimen/gap_s"
+                android:text="@string/settings_reset" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

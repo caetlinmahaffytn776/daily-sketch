@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/result_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_result_gradient">
+
+    <ImageView
+        android:id="@+id/result_art"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:alpha="0.32"
+        android:importantForAccessibility="no"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_result"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/result_texture"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:alpha="0.26"
+        android:importantForAccessibility="no"
+        android:scaleType="centerCrop"
+        android:src="@drawable/texture_paper"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/result_hero"
+        android:layout_width="@dimen/sprite_result"
+        android:layout_height="@dimen/sprite_result"
+        android:layout_marginTop="@dimen/status_bar_pad"
+        android:contentDescription="@string/cd_result_sprite"
+        android:scaleType="fitCenter"
+        android:src="@drawable/sprite_ink_bottle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/result_headline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/gap_m"
+        android:text="@string/result_headline"
+        android:textAppearance="@style/TextAppearance.App.Headline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/result_hero" />
+
+    <TextView
+        android:id="@+id/result_sub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/gap_xs"
+        android:textAppearance="@style/TextAppearance.App.Body"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/result_headline" />
+
+    <TextView
+        android:id="@+id/result_notes"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/screen_margin"
+        android:layout_marginTop="@dimen/gap_xs"
+        android:layout_marginEnd="@dimen/screen_margin"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="2"
+        android:textAppearance="@style/TextAppearance.App.Eyebrow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/result_sub" />
+
+    <LinearLayout
+        android:id="@+id/result_stats_row"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/screen_margin"
+        android:layout_marginTop="@dimen/gap_m"
+        android:layout_marginEnd="@dimen/screen_margin"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/result_notes">
+
+        <com.dailysketch.app.core.ui.StatCardView
+            android:id="@+id/result_stat_streak"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/gap_xxs"
+            android:layout_weight="1"
+            app:statAccent="@color/terracotta"
+            app:statLabel="@string/stat_streak" />
+
+        <com.dailysketch.app.core.ui.StatCardView
+            android:id="@+id/result_stat_entries"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/gap_xxs"
+            android:layout_marginEnd="@dimen/gap_xxs"
+            android:layout_weight="1"
+            app:statAccent="@color/plum"
+            app:statLabel="@string/stat_entries" />
+
+        <com.dailysketch.app.core.ui.StatCardView
+            android:id="@+id/result_stat_minutes"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/gap_xxs"
+            android:layout_weight="1"
+            app:statAccent="@color/clay"
+            app:statLabel="@string/stat_last_minutes" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/result_rule"
+        style="@style/Widget.App.Hairline"
+        android:layout_width="0dp"
+        android:layout_marginStart="@dimen/screen_margin"
+        android:layout_marginTop="@dimen/gap_m"
+        android:layout_marginEnd="@dimen/screen_margin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/result_stats_row" />
+
+    <TextView
+        android:id="@+id/result_eyebrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/screen_margin"
+        android:layout_marginTop="@dimen/gap_s"
+        android:text="@string/result_eyebrow_recent"
+        android:textAppearance="@style/TextAppearance.App.Eyebrow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/result_rule" />
+
+    <com.dailysketch.app.core.ui.StreakStripView
+        android:id="@+id/result_strip"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/screen_margin"
+        android:layout_marginTop="@dimen/gap_xs"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/result_eyebrow" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/result_cta"
+        style="@style/Widget.App.Button.Primary"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/button_height_primary"
+        android:layout_marginStart="@dimen/screen_margin"
+        android:layout_marginEnd="@dimen/screen_margin"
+        android:layout_marginBottom="14dp"
+        android:text="@string/result_cta"
+        app:icon="@drawable/ic_pencil"
+        app:iconTint="@color/on_terracotta"
+        app:layout_constraintBottom_toTopOf="@id/result_menu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/result_menu"
+        style="@style/Widget.App.Button.Secondary"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/button_height_secondary"
+        android:layout_marginStart="@dimen/screen_margin"
+        android:layout_marginEnd="@dimen/screen_margin"
+        android:layout_marginBottom="@dimen/result_bottom_pad"
+        android:text="@string/result_menu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

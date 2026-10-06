@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/entry_root"
+    android:layout_width="@dimen/gallery_card_width"
+    android:layout_height="@dimen/gallery_card_height"
+    android:layout_marginEnd="@dimen/gap_xs"
+    android:background="@drawable/shape_gallery_card"
+    android:orientation="vertical"
+    android:padding="@dimen/gap_s">
+
+    <TextView
+        android:id="@+id/entry_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.App.Eyebrow"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/entry_title"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/gap_xxs"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textAppearance="@style/TextAppearance.App.Body.Small"
+        android:textColor="@color/ink" />
+
+    <View
+        android:id="@+id/entry_mood"
+        android:layout_width="@dimen/mood_dot"
+        android:layout_height="@dimen/mood_dot"
+        android:background="@drawable/shape_mood_dot" />
+
+</LinearLayout>

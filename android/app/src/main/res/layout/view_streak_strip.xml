@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/strip_list"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/gallery_card_height"
+            android:clipToPadding="false"
+            android:orientation="horizontal"
+            android:paddingEnd="@dimen/gap_s"
+            android:paddingStart="0dp" />
+
+        <TextView
+            android:id="@+id/strip_empty"
+            android:layout_width="@dimen/gallery_card_width"
+            android:layout_height="@dimen/gallery_card_height"
+            android:background="@drawable/shape_dashed_card"
+            android:gravity="center"
+            android:padding="@dimen/gap_s"
+            android:text="@string/result_empty_gallery"
+            android:textAppearance="@style/TextAppearance.App.Eyebrow"
+            android:textSize="10sp"
+            android:visibility="gone" />
+
+    </FrameLayout>
+
+</merge>

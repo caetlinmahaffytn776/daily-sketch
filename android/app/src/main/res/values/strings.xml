@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Daily Sketch</string>
+
+    <string name="splash_wordmark">DAILY SKETCH</string>
+    <string name="splash_subtitle">ONE PROMPT A DAY</string>
+    <string name="splash_loading">LOADING</string>
+    <string name="splash_footer">OFFLINE SKETCH JOURNAL</string>
+
+    <string name="menu_wordmark">DAILY SKETCH</string>
+    <string name="menu_eyebrow_today">TODAY</string>
+    <string name="menu_eyebrow_month">THIS MONTH</string>
+    <string name="menu_cta">START SKETCH</string>
+    <string name="menu_hint">Tap to open today\'s entry notes</string>
+    <string name="menu_footer">OFFLINE JOURNAL · NO ACCOUNT</string>
+    <string name="menu_badge_done">TODAY · DONE</string>
+    <string name="menu_category_format">SKETCH TYPE: %1$s</string>
+
+    <string name="stat_streak">DAY STREAK</string>
+    <string name="stat_entries">ENTRIES</string>
+    <string name="stat_minutes">MIN LOGGED</string>
+    <string name="stat_last_minutes">MIN</string>
+
+    <string name="game_header_title">TODAY\'S ENTRY</string>
+    <string name="game_eyebrow_mood">HOW DID IT GO?</string>
+    <string name="game_eyebrow_notes">NOTES</string>
+    <string name="game_eyebrow_minutes">MINUTES SPENT</string>
+    <string name="game_notes_hint">What worked, what didn\'t</string>
+    <string name="game_cta">SAVE ENTRY</string>
+    <string name="game_discard">DISCARD</string>
+    <string name="game_error">COULD NOT SAVE · TRY AGAIN</string>
+    <string name="game_elapsed_initial">00:00</string>
+
+    <string name="mood_smooth">SMOOTH</string>
+    <string name="mood_messy">MESSY</string>
+    <string name="mood_proud">PROUD</string>
+    <string name="mood_stuck">STUCK</string>
+
+    <string name="minutes_five">5</string>
+    <string name="minutes_ten">10</string>
+    <string name="minutes_twenty">20</string>
+    <string name="minutes_thirty">30</string>
+
+    <string name="result_headline">ENTRY SAVED</string>
+    <string name="result_sub_format">Day %1$d of your streak</string>
+    <string name="result_eyebrow_recent">RECENT SKETCHES</string>
+    <string name="result_cta">SKETCH AGAIN</string>
+    <string name="result_menu">MENU</string>
+    <string name="result_no_notes">NO NOTES THIS TIME</string>
+    <string name="result_empty_gallery">YOUR FIRST ENTRY LIVES HERE</string>
+
+    <string name="settings_title">SETTINGS</string>
+    <string name="settings_reminder">DAILY REMINDER MARK</string>
+    <string name="settings_reminder_caption">Marks the date line on the home screen</string>
+    <string name="settings_pack">PROMPT PACK</string>
+    <string name="settings_pack_observation">OBSERVATION</string>
+    <string name="settings_pack_imagination">IMAGINATION</string>
+    <string name="settings_pack_mixed">MIXED</string>
+    <string name="settings_reset">RESET JOURNAL</string>
+    <string name="settings_reset_confirm">TAP AGAIN TO CONFIRM</string>
+    <string name="settings_close">CLOSE</string>
+    <string name="settings_offline">Everything stays on this device</string>
+
+    <string name="pack_observation">OBSERVATION</string>
+    <string name="pack_imagination">IMAGINATION</string>
+    <string name="pack_mixed">MIXED</string>
+
+    <string name="weekday_mon">M</string>
+    <string name="weekday_tue">T</string>
+    <string name="weekday_wed">W</string>
+    <string name="weekday_thu">T</string>
+    <string name="weekday_fri">F</string>
+    <string name="weekday_sat">S</string>
+    <string name="weekday_sun">S</string>
+
+    <string name="legend_done">DONE</string>
+    <string name="legend_missed">MISSED</string>
+    <string name="legend_today">TODAY</string>
+
+    <string name="cd_settings">Open settings</string>
+    <string name="cd_back">Go back</string>
+    <string name="cd_close">Close</string>
+    <string name="cd_splash_mark">Daily Sketch pencil mark</string>
+    <string name="cd_menu_sprite">Closed sketchbook illustration</string>
+    <string name="cd_game_sprite">Artist palette illustration</string>
+    <string name="cd_result_sprite">Ink bottle illustration</string>
+    <string name="cd_calendar_done">Day %1$d, sketch completed</string>
+    <string name="cd_calendar_missed">Day %1$d, no sketch</string>
+    <string name="cd_calendar_today">Day %1$d, today</string>
+    <string name="cd_calendar_future">Day %1$d, still ahead</string>
+    <string name="cd_entry_card">Entry from %1$s</string>
+
+    <string name="state_selected">selected</string>
+    <string name="state_not_selected">not selected</string>
+    <string name="state_saving">saving</string>
+    <string name="state_ready">ready</string>
+    <string name="state_loading">loading</string>
+    <string name="state_on">on</string>
+    <string name="state_off">off</string>
+</resources>
